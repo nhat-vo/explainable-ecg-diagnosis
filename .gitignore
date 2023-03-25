@@ -1,3 +1,8 @@
+data/
+model/
+ecgxai/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -75,7 +80,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+**/.ipynb_checkpoints
 
 # IPython
 profile_default/

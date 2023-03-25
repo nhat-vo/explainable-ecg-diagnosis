@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="sinus bradycardia (SB) <= 4.945e-05\ngini = 0.2743609\nsamples = 1828\nvalue = [1528, 300]\nclass = negative", fillcolor="#ea9a60"] ;
+1 [label="sinus bradycardia (SB) <= 1.597e-05\ngini = 0.05814877\nsamples = 1468\nvalue = [1424, 44]\nclass = negative", fillcolor="#e6853f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="1st degree AV block (1dAVb) <= 0.86776105\ngini = 0.01882524\nsamples = 1368\nvalue = [1355, 13]\nclass = negative", fillcolor="#e5823b"] ;
+1 -> 2 ;
+3 [label="gini = 0.01599896\nsamples = 1364\nvalue = [1353, 11]\nclass = negative", fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label="gini = 0.5\nsamples = 4\nvalue = [2, 2]\nclass = negative", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="atrial fibrillation (AF) <= 3e-07\ngini = 0.4278\nsamples = 100\nvalue = [69, 31]\nclass = negative", fillcolor="#f1ba92"] ;
+1 -> 5 ;
+6 [label="gini = 0.35502959\nsamples = 26\nvalue = [6, 20]\nclass = positive", fillcolor="#74baed"] ;
+5 -> 6 ;
+7 [label="gini = 0.25310446\nsamples = 74\nvalue = [63, 11]\nclass = negative", fillcolor="#ea975c"] ;
+5 -> 7 ;
+8 [label="sinus tachycardia (ST) <= 5.18e-06\ngini = 0.4108642\nsamples = 360\nvalue = [104, 256]\nclass = positive", fillcolor="#89c5f0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="sinus bradycardia (SB) <= 0.000208\ngini = 0.235008\nsamples = 250\nvalue = [34, 216]\nclass = positive", fillcolor="#58ace9"] ;
+8 -> 9 ;
+10 [label="gini = 0.42918256\nsamples = 93\nvalue = [29, 64]\nclass = positive", fillcolor="#93c9f1"] ;
+9 -> 10 ;
+11 [label="gini = 0.06166579\nsamples = 157\nvalue = [5, 152]\nclass = positive", fillcolor="#40a0e6"] ;
+9 -> 11 ;
+12 [label="sinus bradycardia (SB) <= 0.00426048\ngini = 0.46280992\nsamples = 110\nvalue = [70, 40]\nclass = negative", fillcolor="#f4c9aa"] ;
+8 -> 12 ;
+13 [label="gini = 0.30178326\nsamples = 81\nvalue = [66, 15]\nclass = negative", fillcolor="#eb9e66"] ;
+12 -> 13 ;
+14 [label="gini = 0.23781213\nsamples = 29\nvalue = [4, 25]\nclass = positive", fillcolor="#59ade9"] ;
+12 -> 14 ;
+}

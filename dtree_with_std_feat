@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ventricular_rate <= 59.5\ngini = 0.2714114\nsamples = 1828\nvalue = [1532, 296]\nclass = negative", fillcolor="#ea995f"] ;
+1 [label="sinus tachycardia (ST) <= 9.485e-05\ngini = 0.06974983\nsamples = 304\nvalue = [11, 293]\nclass = positive", fillcolor="#40a1e6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="atrial fibrillation (AF) <= 0.48117978\ngini = 0.01369798\nsamples = 290\nvalue = [2, 288]\nclass = positive", fillcolor="#3a9ee5"] ;
+1 -> 2 ;
+3 [label="gini = 0.00689647\nsamples = 289\nvalue = [1, 288]\nclass = positive", fillcolor="#3a9de5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = negative", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="sinus bradycardia (SB) <= 0.00426048\ngini = 0.45918367\nsamples = 14\nvalue = [9, 5]\nclass = negative", fillcolor="#f3c7a7"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = negative", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = positive", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="atrial_rate <= 56.0\ngini = 0.00392926\nsamples = 1524\nvalue = [1521, 3]\nclass = negative", fillcolor="#e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="sinus tachycardia (ST) <= 1.512e-05\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = negative", fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = negative", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = positive", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="age <= 22.5\ngini = 0.00262467\nsamples = 1522\nvalue = [1520, 2]\nclass = negative", fillcolor="#e58139"] ;
+8 -> 12 ;
+13 [label="gini = 0.04759072\nsamples = 82\nvalue = [80, 2]\nclass = negative", fillcolor="#e6843e"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1440\nvalue = [1440, 0]\nclass = negative", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
